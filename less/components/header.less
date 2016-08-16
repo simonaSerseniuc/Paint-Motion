@@ -1,0 +1,114 @@
+@media (min-width:416px) {
+  header {
+    padding: 20px 0px 20px;
+    .menu,
+    .logo {
+      display: inline-block;
+    }
+    .logo {
+      margin-left: 20px;
+    }
+
+    border-bottom: 1px solid @gray;
+  }
+
+  .menu-hidden + .col-md-9 {
+    width: 100%;
+    transition: all 200ms;
+  }
+
+  .aside-menu + .col-md-9 {
+    transition: all 200ms;
+    padding: 0;
+  }
+}
+@media (max-width:415px) {
+  header {
+    padding: 20px 0px 20px;
+    .menu,
+    .logo {
+      display: inline-block;
+    }
+    .logo {
+      margin-left: 20px;
+      img {
+        width: 70%;
+      }
+    }
+
+    a {
+      display: inline-block;
+    }
+    border-bottom: 1px solid @gray;
+  }
+
+  .menu-hidden + .col-md-9 {
+    width: 100%;
+    transition: all 200ms;
+  }
+
+  .aside-menu + .col-md-9 {
+    transition: all 200ms;
+    padding: 0;
+  }
+}
+
+
+html,
+body,
+.main-wrapper,
+.aside-menu {
+  height: 100%; 
+}
+
+header section{
+  display: inline-block;
+}
+
+.buttonColors{
+  width: 58px;
+  height: 56px;
+  border: 1px solid;
+  margin-right: 10px;
+}
+
+.buttonBackground{
+  background-image: url("../img/colors.jpg") !important;
+  background-size: 58px 56px;
+  background-repeat: no-repeat;
+}
+
+.customiseFA{
+  border: 0px;
+  background-color: white;
+  margin-right: 5px;
+}
+
+
+.saveIcon, .saveIcon:visited, .saveIcon:hover, .saveIcon:focus, .saveIcon:active{
+  color: #333;
+}
+
+.brushDropdown{
+  .btn-group, .btn-group.open{
+    button, button:hover, button:focus, button:active, button:visited{
+      background-color: #fff;
+      border: 0px;
+      color: #333;
+    }
+    margin-right: 10px;
+  }
+
+  .btn-primary .caret{
+    border-top-color: #333;
+  }
+}
+
+.shapeButton{
+  color: #333;
+}
+
+.middle{
+  position: absolute;
+  left: 40%;
+}

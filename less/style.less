@@ -1,0 +1,29 @@
+@import "variables/colors.less";
+@import "mixins/mixins.less";
+
+@import "components/header.less";
+@import "components/menu.less";
+@import "components/colorsModal.less";
+@import "components/loader.less";
+
+@font-face { font-family: SourceSansPro; src: url('../css/fonts/SourceSansPro-ExtraLight.otf'); }
+
+a {text-decoration: none !important;}
+
+.drawingCanvas{
+	width: 100%;
+	height: 700px;
+	border: 1px solid #d2d2d2;
+	z-index: 50;
+}
+
+.hoveringCanvas{
+	width: 100%;
+	height: 700px;
+	z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    margin-top: 100px;
+}

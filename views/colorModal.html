@@ -1,0 +1,31 @@
+<div id="colorsModal">
+	<div class="modal-header">
+	    <h3 class="modal-title">Select a color</h3>
+	    <button style="background-color: {{currentColor.color}}; "></button>
+	</div>
+	<div class="modal-body">
+	   
+	    <div class="row">
+	    	<div class="col-md-6">
+		        <div ng-repeat="color in colors" class="colorList" ng-class="{selected: color.selected}" id="{{color.name}}-color">
+		        	<!-- <div class="row"> -->
+			        	<!-- <div class="col-md-6"> -->
+			        	<div class="nameSpace">
+			        		<b style="color:{{color.color}}">{{color.name}}</b>
+			        	</div>
+			        	<!-- </div> -->
+			        	<!-- <div class="col-md-6"> -->
+		            		<button style="background-color:{{color.color}};"></button>
+	            		<!-- </div>	 -->
+		            <!-- </div> -->
+		        </div>
+	        </div>
+	        <div class="col-md-6 shades">
+	        	<div ng-repeat="shade in currentShade" class="shadeList" ng-class="{selected: shade.selected}">	        	
+	        		<button style="background-color: {{shade.color}}; "></button>
+	        	</div>
+	        </div>
+	    </div>	
+	</div>    	
+</div>
+   
